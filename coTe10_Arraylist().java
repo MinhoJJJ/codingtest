@@ -3,10 +3,10 @@ import java.util.*;
 public class Solution {
     public ArrayList<Integer> solution(int []arr) {
         
-	      int count=0;
+	  int count=0;
           int temp = arr[0];
 	      
-	      ArrayList<Integer>list=new ArrayList<>(arr.length);
+	  ArrayList<Integer>list=new ArrayList<>(arr.length);
           list.add(arr[0]);
 	      for(int i:arr){
               if(i!=temp){
