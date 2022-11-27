@@ -28,7 +28,7 @@ class Solution {
 		for(int key : map2.keySet()) //순서 정렬     //KeySet은 키 값을 가져와줍니다.
 			pq.add(key);        //PriorityQueue는 자동으로 오름차순으로 정렬해줍니다.
 
-		int[] ans = new int[map2.size()];     //반환할 배열을 out 완료된 차의 댓수만큼 생성합니다.
+		int[] ans = new int[map2.size()];     //반환할 배열을 out 완료된 차의 댓수만큼 생성합니다
 		for(int i = 0; i < ans.length; i ++){ // pq 순서대로 계산하여 입력
 			int overTime = map2.get(pq.poll()) - baseTime;;  //차량 별 총 시간을 overTime에 저장합니다.
 			if(overTime < 0) overTime = 0;       //만약 overTime이 -라면 0을 넣어줍니다.
